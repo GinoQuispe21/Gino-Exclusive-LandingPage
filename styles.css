@@ -54,6 +54,11 @@ body, html{
     cursor: pointer;
 }
 
+.img{
+    height: 24px;
+    width: 24px;
+}
+
 .cart{
     font-size: 30px;
     cursor: pointer;
