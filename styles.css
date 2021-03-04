@@ -52,6 +52,7 @@ body, html{
     font-size: 30px;
     font-weight: 900;
     cursor: pointer;
+    animation: top-down 1.5s forwards;
 }
 
 .img{
@@ -62,6 +63,7 @@ body, html{
 .cart{
     font-size: 30px;
     cursor: pointer;
+    animation: right-to-left 1.5s forwards;
 }
 
 .hamburger{
@@ -105,6 +107,7 @@ body, html{
     align-items: center;
     justify-content: center;
     padding: 0 20px;
+    animation: right-to-left 1.5s forwards;
 }
 
 .sci i {
@@ -129,6 +132,7 @@ body, html{
     text-orientation: mixed;
     font-size: 20px;
     font-weight: 600;
+    animation: left-to-right 1.5s;
 }
 
 .z-index-99 {
@@ -217,6 +221,7 @@ body, html{
     width: 100%;
     height: 100%;
     align-items: center;
+    animation: bottom-up 2s;
 }
 
 .slide:nth-child(1) {
@@ -279,8 +284,56 @@ body, html{
     color: black;
 }
 
+.menu {
+    animation: left-to-right 1.5s forwards;
+}
+
 /* animations */
 
 @keyframes top-down {
-    
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bottom-up {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes left-to-right {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes right-to-left {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
