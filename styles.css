@@ -162,7 +162,7 @@ body, html{
 }
 
 .info h1{
-    font-size: 110px;
+    font-size: 100px;
     font-weight: 900;
     line-height: 140px;
     text-transform: uppercase;
@@ -223,9 +223,9 @@ body, html{
 .product-info.active button {
     opacity: 1;
     transition: opacity 1s,
-                transform 1.2,
-                letter-spacing 1.2s,
-                right 1.2s;
+        transform 1.2,
+        letter-spacing 1.2s,
+        right 1.2s;
 }
 
 .product-info h1{
@@ -276,6 +276,7 @@ body, html{
     width: 100%;
     height: 100%;
     align-items: center;
+    transition: 1s ease-in-out;
     animation: bottom-up 2s;
 }
 
